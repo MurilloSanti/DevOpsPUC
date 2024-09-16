@@ -19,7 +19,7 @@ jobs:
         node-version: '14'
     - name: Install dependencies
       run: npm install
-      working-directory: ./C:\Windows\system32\package.json
+      working-directory: ./
     - name: Run tests
       run: npm test
-      working-directory: ./C:\Windows\system32\package.json
+      working-directory: ./
