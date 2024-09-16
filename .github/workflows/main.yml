@@ -22,4 +22,4 @@ jobs:
       working-directory: ./home/runner/work/DevOpsPUC/DevOpsPUC/package.json
     - name: Run tests
       run: npm test
-      working-directory: ./home/runner/work/DevOpsPUC/DevOpsPUC/package.json
+      working-directory: ./
