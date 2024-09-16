@@ -19,7 +19,7 @@ jobs:
         node-version: '14'
     - name: Install dependencies
       run: npm install
-      working-directory: ./home/runner/work/DevOpsPUC/DevOpsPUC/package.json
+      working-directory: ./C:\Windows\system32\package.json
     - name: Run tests
       run: npm test
-      working-directory: ./
+      working-directory: ./C:\Windows\system32\package.json
