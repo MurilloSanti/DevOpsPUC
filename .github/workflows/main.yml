@@ -1,13 +1,25 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
 jobs:
   build:
+
     runs-on: ubuntu-latest
+
     steps:
     - uses: actions/checkout@v2
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
         node-version: '14'
-    - run: npm install
-      working-directory: ./seu-subdiretorio
-    - run: npm test
-      working-directory: ./seu-subdiretorio
+    - name: Install dependencies
+      run: npm install
+      working-directory: ./  # Ajuste este caminho se necessário
+    - name: Run tests
+      run: npm test
+      working-directory: ./  # Ajuste este caminho se necessário
