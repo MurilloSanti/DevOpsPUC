@@ -1,0 +1,33 @@
+// src/sum.js
+const sum = (a, b) => a + b;
+
+// src/reverseString.js
+const reverseString = (str) => str.split('').reverse().join('');
+
+// src/contains.js
+const contains = (arr, value) => arr.includes(value);
+
+// src/fetchData.js
+const fetchData = async () => {
+  return 'data received';
+};
+
+// Testes
+describe('Testes de Funções', () => {
+  test('adds 1 + 2 to equal 3', () => {
+    expect(sum(1, 2)).toBe(3);
+  });
+
+  test('reverses "hello" to "olleh"', () => {
+    expect(reverseString('hello')).toBe('olleh');
+  });
+
+  test('checks if array contains value 5', () => {
+    expect(contains([1, 2, 3, 5], 5)).toBe(true);
+  });
+
+  test('fetches data successfully', async () => {
+    const data = await fetchData();
+    expect(data).toBe('data received');
+  });
+});
