@@ -1,0 +1,24 @@
+// tests/allTests.test.js
+const sum = (a, b) => a + b;
+const reverseString = (str) => str.split('').reverse().join('');
+const contains = (arr, value) => arr.includes(value);
+const fetchData = async () => 'data received';
+
+describe('Testes de Funções', () => {
+  test('adds 1 + 2 to equal 3', () => {
+    expect(sum(1, 2)).toBe(3);
+  });
+
+  test('reverses "hello" to "olleh"', () => {
+    expect(reverseString('hello')).toBe('olleh');
+  });
+
+  test('checks if array contains value 5', () => {
+    expect(contains([1, 2, 3, 5], 5)).toBe(true);
+  });
+
+  test('fetches data successfully', async () => {
+    const data = await fetchData();
+    expect(data).toBe('data received');
+  });
+});
