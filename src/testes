@@ -1,18 +1,9 @@
-// src/sum.js
+// tests/allTests.test.js
 const sum = (a, b) => a + b;
-
-// src/reverseString.js
 const reverseString = (str) => str.split('').reverse().join('');
-
-// src/contains.js
 const contains = (arr, value) => arr.includes(value);
+const fetchData = async () => 'data received';
 
-// src/fetchData.js
-const fetchData = async () => {
-  return 'data received';
-};
-
-// Testes
 describe('Testes de Funções', () => {
   test('adds 1 + 2 to equal 3', () => {
     expect(sum(1, 2)).toBe(3);
